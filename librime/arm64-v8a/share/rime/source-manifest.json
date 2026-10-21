@@ -1,0 +1,82 @@
+{
+  "prebuilder_commit": "0af671f902680e00e4842d92ba49e373db0cf938",
+  "plugins": {
+    "librime-lua": {
+      "commit": "68f9c364a2d25a04c7d4794981d7c796b05ab627",
+      "patch": {
+        "name": "librime-lua.patch",
+        "sha256": "393ac2fd11762a3bf8b3670273625f0ef8037f1869bf0b680874c3cb0ea615e2"
+      }
+    },
+    "librime-octagram": {
+      "commit": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "patch": {
+        "name": "librime-octagram.patch",
+        "sha256": "a9482101331da85035e3dbd7347ced64b6e89e09b216ff45331d419b56aaa89c"
+      }
+    },
+    "librime-predict-leveldb": {
+      "commit": "0c30981a7c178e62a94e02d611e866db66951bfe",
+      "patch": {
+        "name": "librime-predict.patch",
+        "sha256": "d9e81872509aa0282ee2a03fa68488d00d1ad1786dee163e3da38db378b1b712"
+      }
+    }
+  },
+  "upstream_commit": "1b3417d2b6a11b5e50e0e1fa9dc396056aa11dce",
+  "patches": [
+    {
+      "name": "librime.patch",
+      "sha256": "ef2260425b9a456dbea75f103a7c6ed6e49efdcb671bb86f9c444d3099ee0af4"
+    },
+    {
+      "name": "librime-conditional-tabs-test.patch",
+      "sha256": "e42afbcb8b2b817ff4b5e2e51fc67b4821fad8f75e1e83de3fddba1dd59a5aad"
+    },
+    {
+      "name": "librime-perf-syllabifier-cache-repeated-QuerySpelling-iterat.patch",
+      "sha256": "6061f33c653cd2c9fe3cb41d259168d5e65a5174bfb002f7b9e48228c5911d91"
+    },
+    {
+      "name": "librime-perf-deploy-compile-independent-dictionaries-in-para.patch",
+      "sha256": "ff60886f88bbe1a31c77cac92b477a95a9b7b1f978c69c338d6cd9078a55bd14"
+    },
+    {
+      "name": "librime-userdict-cache.patch",
+      "sha256": "09984979c03ba27ec629965d2b4fcb04729582df0f84966e138dba2206835efb"
+    },
+    {
+      "name": "librime-fix-mapped-file-remap.patch",
+      "sha256": "c782ca9e96d1034487f09c902367b95cc6c2be7343e933327b0e31c306c430d2"
+    },
+    {
+      "name": "librime-defer-composition-refresh-on-delete.patch",
+      "sha256": "7dcc7f3c0a78edf7695f551500f2ba9e76959d776140ee78b4e4ce47bb4b025a"
+    },
+    {
+      "name": "librime-pr1232-rewrite-filter.patch",
+      "sha256": "dc720512af1997259d91c1dfaaf6da6756ca14564bbdae2dc8f3f43ad23b1ae9"
+    },
+    {
+      "name": "librime-detect-modifications-fingerprint.patch",
+      "sha256": "1ebbcc72af6f05f8c293abf15bbd23034ce63f6d595c6f82b755e2bc4ba45f9c"
+    }
+  ],
+  "abi": "arm64-v8a",
+  "dependency_prebuilt_commit": "1126616c3ec569617da772e30d7a97f6b2694172",
+  "platform": 23,
+  "ndk": "28.0.13004108",
+  "cmake": "3.31.6",
+  "cxx_standard": 17,
+  "archive_sha256": "8594fc925a72609450b7cbfef3ccd9ace57081248e7a07fbd11757e232ef1cdd",
+  "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+  "boost_version_header_sha256": "1a3a432bf24fbd21b3c9c90b3f5dce9456f2334f1d2b79b1e3318c780d8b1935",
+  "dependency_archives_sha256": {
+    "glog": "e795b0f687fa221bf1f4d24718b06c5c347859ba9e2a4cfe9f92469f23ffd27d",
+    "yaml-cpp": "5a3a443dd099e543db6e5a79f1bd01258b52c379d4c20394ae81396c8a941ba0",
+    "leveldb": "e070afd4eff2392a96976a17c69c66694d6f891ac0177a96b91e9edb4cf6781a",
+    "marisa": "572eae47d67aa6915a999658ab7671c99430c9446f8813615a19a0c53dc777a6",
+    "opencc": "e5f889175425165c4a78d9ecee9b3cd90b0daba15764c0813a2888a725b633e7",
+    "lua": "4429c503ae46688c3a66e76447e1543dd761988d885e5d22d636c5b88292c814"
+  }
+}
