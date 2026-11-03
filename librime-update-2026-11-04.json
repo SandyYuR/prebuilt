@@ -2,11 +2,11 @@
   "schema_version": 1,
   "version": "1.17.0-e930f57",
   "upstream": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc",
-  "previous_upstream": "1b3417d2b6a11b5e50e0e1fa9dc396056aa11dce",
+  "previous_upstream": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc",
   "librime_repository": "https://github.com/SandyYuR/librime.git",
-  "librime_commit": "bb5b99bd7f62f399a3b038b599291d3cd13e71f0",
-  "source_tree": "20350b22a59bdbba13729235918908d422827dc3",
-  "downstream_manifest_sha256": "054f9a08e616debafbda827a12b4e4512ad1d641b0978635927a43efc2fc3b9d",
+  "librime_commit": "1b9c28444c321ff54526025f6f447b10e398a3d1",
+  "source_tree": "d18c3dc3b37a97fd80b0bc879bcc0e20251b1790",
+  "downstream_manifest_sha256": "501b20ff824c038233a78a0ce7babdaaf29e9020b7920668331b0b88e485ae47",
   "upstream_prs": [
     {
       "number": 1203,
@@ -17,7 +17,7 @@
     {
       "number": 1196,
       "url": "https://github.com/rime/librime/pull/1196",
-      "integration": "merged-source",
+      "integration": "squashed-source",
       "commit": "a559ef5949481b5157b478401d78b70b3c17dab1"
     },
     {
@@ -44,12 +44,12 @@
       ]
     }
   ],
-  "prebuilder_commit": "4a2851f2a9617d2eac2d0e674dbd3d0841d39513",
-  "prebuilder_head": "d27db36cafb43a18b5a5815f0fe82648e06779aa",
-  "prebuilder_source_tag": "v0-archive-librime-build-20261104",
+  "prebuilder_commit": "1331e7d442c499faa465ff335298277930e24669",
+  "prebuilder_head": "299d1576e44dd22d23fcaf68661316a8f0837257",
+  "prebuilder_source_tag": "v0-archive-librime-build-20261104.2",
   "dependency_prebuilt": "1126616c3ec569617da772e30d7a97f6b2694172",
-  "previous_prebuilt": "ccb637850d7f170dff7bdf509cff12a2476e74a3",
-  "ci_run": 41674000849,
+  "previous_prebuilt": "af5523a7a311fba57aa25d5f7d6126f21231a97c",
+  "ci_run": 41681892343,
   "source_contract_tests": 5,
   "host_tests": 172,
   "plugins": {
@@ -77,23 +77,55 @@
   },
   "abis": {
     "armeabi-v7a": {
-      "archive_sha256": "cd9b5e9aeeaf82a90e98e2a78267e3b4cd53f8425e7a6c926bb1f165ce27f5b1",
+      "archive_sha256": "037fd82564e434afeec71b9a92b8937c17c33f3732c9be0c9de47a8e26851130",
       "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
     },
     "arm64-v8a": {
-      "archive_sha256": "5acb369595f30d209df88efbc88fe453da6c786366651050e34657a8b3db7941",
+      "archive_sha256": "675a8fab3e9c76d2e365aca0f2cba4b562add6057f8aae49a57d41990f79987d",
       "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
     },
     "x86": {
-      "archive_sha256": "d57d3144fd4b2b730e5019f7d58c9cd343e7b27015f8c015e19c33f0a196392c",
+      "archive_sha256": "75d884445f1ab46ff87640f4e1e79eab8195b9fcca1ee41a1d6f70d501137ecf",
       "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
     },
     "x86_64": {
-      "archive_sha256": "95f541e8c52bbdcc580d4457776850e3fa51a19c8e9e60b825eefed3b4bb57c7",
+      "archive_sha256": "88d64d4e95d1096221934026a0f0292ce57edbd2f1c44e6782636a6a8b284bb2",
       "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
     }
   },
-  "librime_source_tag": "zhongzhou-20261104.1",
-  "librime_merge_commit": "f6f4fc2a2c4c7713182feaf940d970ab00e4d1a9",
-  "prebuilder_merge_commit": "a3e83cee7b4678d28890213f1021baf8704db741"
+  "librime_source_tag": "zhongzhou-20261104.2",
+  "librime_branch_commit": "1b9c28444c321ff54526025f6f447b10e398a3d1",
+  "librime_ci_run": 41681766176,
+  "maintenance": {
+    "history_strategy": "rebase-onto-upstream",
+    "upstream_pr_integration": "one-commit-per-pr",
+    "superseded_patches": [
+      {
+        "commit": "5bdfe1584a760b230bffd0b5206a329e3c046df0",
+        "upstream_pr": 1203,
+        "reason": "Replaced by the official compile graph and bounded scheduler in the upstream base."
+      }
+    ]
+  },
+  "prebuilder_merge_commit": "591b8e89b325761704638cfd454c2282adb0cb3c",
+  "source_ci_validation": {
+    "run_id": 41681766176,
+    "passed_checks": 13,
+    "infrastructure_pending": [
+      {
+        "platform": "macOS ARM (macos-26)",
+        "reason": "GitHub hosted runner capacity; runner never acquired",
+        "code_executed": false
+      }
+    ]
+  },
+  "release_validation": {
+    "basis": [
+      "four Android ABI builds",
+      "172 native tests",
+      "5 source contract tests",
+      "archive/API/plugin/dependency provenance checks"
+    ],
+    "infrastructure_exception": "Proceed with the completed Android and engine validation as requested; macOS ARM CI remains under retry and is not reported as passed."
+  }
 }
