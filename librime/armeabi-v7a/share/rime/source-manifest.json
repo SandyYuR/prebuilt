@@ -1,5 +1,5 @@
 {
-  "prebuilder_commit": "97f3dfb707f76e7897557579630b904dc6dbb688",
+  "prebuilder_commit": "4a2851f2a9617d2eac2d0e674dbd3d0841d39513",
   "plugins": {
     "librime-lua": {
       "commit": "68f9c364a2d25a04c7d4794981d7c796b05ab627",
@@ -24,11 +24,11 @@
     }
   },
   "librime_repository": "https://github.com/SandyYuR/librime.git",
-  "librime_commit": "446f8584eb01ab8f72b3f0b970fda3919b1c1a55",
+  "librime_commit": "bb5b99bd7f62f399a3b038b599291d3cd13e71f0",
   "upstream_repository": "https://github.com/rime/librime",
-  "upstream_commit": "1b3417d2b6a11b5e50e0e1fa9dc396056aa11dce",
-  "source_tree": "23668bfc246801080101e9fc444601bf63020b40",
-  "downstream_manifest_sha256": "0773a423988f69be882f028a96cf2caf8557b77c056b5683a7a5a827efd77379",
+  "upstream_commit": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc",
+  "source_tree": "20350b22a59bdbba13729235918908d422827dc3",
+  "downstream_manifest_sha256": "054f9a08e616debafbda827a12b4e4512ad1d641b0978635927a43efc2fc3b9d",
   "core_patch_mode": "committed-source",
   "patches": [],
   "integrated_patches": [
@@ -84,7 +84,7 @@
   "ndk": "28.0.13004108",
   "cmake": "3.31.6",
   "cxx_standard": 17,
-  "archive_sha256": "f42152013c4bbc8f2f99417dcab368a2bc5782526a0b62ac9501d0050965a4f4",
+  "archive_sha256": "cd9b5e9aeeaf82a90e98e2a78267e3b4cd53f8425e7a6c926bb1f165ce27f5b1",
   "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
   "boost_version_header_sha256": "1a3a432bf24fbd21b3c9c90b3f5dce9456f2334f1d2b79b1e3318c780d8b1935",
   "dependency_archives_sha256": {

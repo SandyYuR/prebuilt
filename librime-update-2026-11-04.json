@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "version": "1.17.0-e930f57",
+  "upstream": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc",
+  "previous_upstream": "1b3417d2b6a11b5e50e0e1fa9dc396056aa11dce",
+  "librime_repository": "https://github.com/SandyYuR/librime.git",
+  "librime_commit": "bb5b99bd7f62f399a3b038b599291d3cd13e71f0",
+  "source_tree": "20350b22a59bdbba13729235918908d422827dc3",
+  "downstream_manifest_sha256": "054f9a08e616debafbda827a12b4e4512ad1d641b0978635927a43efc2fc3b9d",
+  "upstream_prs": [
+    {
+      "number": 1203,
+      "url": "https://github.com/rime/librime/pull/1203",
+      "integration": "upstream-master",
+      "commit": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc"
+    },
+    {
+      "number": 1196,
+      "url": "https://github.com/rime/librime/pull/1196",
+      "integration": "merged-source",
+      "commit": "a559ef5949481b5157b478401d78b70b3c17dab1"
+    },
+    {
+      "number": 1232,
+      "url": "https://github.com/rime/librime/pull/1232",
+      "integration": "equivalent-committed-source",
+      "commit": "8530499b19f2944776ba1d6988fc70712ddeacf2",
+      "identical_files": [
+        "src/rime/dict/rewrite_internal.h",
+        "src/rime/dict/rewrite_pack.cc",
+        "src/rime/dict/rewrite_pack.h",
+        "src/rime/dict/rewrite_store.cc",
+        "src/rime/dict/rewrite_store.h",
+        "src/rime/gear/gears_module.cc",
+        "src/rime/gear/rewriter.cc",
+        "src/rime/gear/rewriter.h",
+        "src/rime/lever/rewrite_compiler.cc",
+        "src/rime/lever/rewrite_compiler.h",
+        "src/rime/lever/rewrite_preset.cc",
+        "src/rime/lever/rewrite_preset.h"
+      ],
+      "adapted_files": [
+        "src/rime/lever/deployment_tasks.cc"
+      ]
+    }
+  ],
+  "prebuilder_commit": "4a2851f2a9617d2eac2d0e674dbd3d0841d39513",
+  "prebuilder_head": "d27db36cafb43a18b5a5815f0fe82648e06779aa",
+  "prebuilder_source_tag": "v0-archive-librime-build-20261104",
+  "dependency_prebuilt": "1126616c3ec569617da772e30d7a97f6b2694172",
+  "previous_prebuilt": "ccb637850d7f170dff7bdf509cff12a2476e74a3",
+  "ci_run": 41674000849,
+  "source_contract_tests": 5,
+  "host_tests": 172,
+  "plugins": {
+    "librime-lua": {
+      "commit": "68f9c364a2d25a04c7d4794981d7c796b05ab627",
+      "patch": {
+        "name": "librime-lua.patch",
+        "sha256": "393ac2fd11762a3bf8b3670273625f0ef8037f1869bf0b680874c3cb0ea615e2"
+      }
+    },
+    "librime-octagram": {
+      "commit": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "patch": {
+        "name": "librime-octagram.patch",
+        "sha256": "a9482101331da85035e3dbd7347ced64b6e89e09b216ff45331d419b56aaa89c"
+      }
+    },
+    "librime-predict-leveldb": {
+      "commit": "0c30981a7c178e62a94e02d611e866db66951bfe",
+      "patch": {
+        "name": "librime-predict.patch",
+        "sha256": "d9e81872509aa0282ee2a03fa68488d00d1ad1786dee163e3da38db378b1b712"
+      }
+    }
+  },
+  "abis": {
+    "armeabi-v7a": {
+      "archive_sha256": "cd9b5e9aeeaf82a90e98e2a78267e3b4cd53f8425e7a6c926bb1f165ce27f5b1",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
+    },
+    "arm64-v8a": {
+      "archive_sha256": "5acb369595f30d209df88efbc88fe453da6c786366651050e34657a8b3db7941",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
+    },
+    "x86": {
+      "archive_sha256": "d57d3144fd4b2b730e5019f7d58c9cd343e7b27015f8c015e19c33f0a196392c",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
+    },
+    "x86_64": {
+      "archive_sha256": "95f541e8c52bbdcc580d4457776850e3fa51a19c8e9e60b825eefed3b4bb57c7",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b"
+    }
+  },
+  "librime_source_tag": "zhongzhou-20261104.1",
+  "librime_merge_commit": "f6f4fc2a2c4c7713182feaf940d970ab00e4d1a9",
+  "prebuilder_merge_commit": "a3e83cee7b4678d28890213f1021baf8704db741"
+}
