@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "version": "1.17.0-0e8ee40",
+  "upstream": "0e8ee4047f938adc7f1e32e0dfa1f6ab11dac9db",
+  "previous_upstream": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc",
+  "librime_repository": "https://github.com/SandyYuR/librime.git",
+  "librime_commit": "6af3692f650300ceccf99776c9f3dbc884692b9c",
+  "previous_librime_commit": "1b9c28444c321ff54526025f6f447b10e398a3d1",
+  "source_tree": "523ec80eed0517c7846890b647a8af437a59a56e",
+  "downstream_manifest_sha256": "2c8db76f189e19fa2fbcbebc718528c3cadf90fa3b40548ec86d2bf3e95b1b14",
+  "previous_prebuilt": "1c6ca0b5ef0473e45724a1ca45ed9fee646b6349",
+  "previous_record": "librime-update-2026-11-04.json",
+  "prebuilder_commit": "e117c1f6d8421611087e7af4d1e7b0f65ff13445",
+  "prebuilder_default_commit": "e117c1f6d8421611087e7af4d1e7b0f65ff13445",
+  "ci_run": 41781661036,
+  "prebuilder_default_ci_run": 41782258291,
+  "dependency_prebuilt": "1126616c3ec569617da772e30d7a97f6b2694172",
+  "source_contract_tests": 5,
+  "host_tests": 199,
+  "plugins": {
+    "librime-lua": {
+      "commit": "68f9c364a2d25a04c7d4794981d7c796b05ab627",
+      "patch": {
+        "name": "librime-lua.patch",
+        "sha256": "393ac2fd11762a3bf8b3670273625f0ef8037f1869bf0b680874c3cb0ea615e2"
+      }
+    },
+    "librime-octagram": {
+      "commit": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "patch": {
+        "name": "librime-octagram.patch",
+        "sha256": "a9482101331da85035e3dbd7347ced64b6e89e09b216ff45331d419b56aaa89c"
+      }
+    },
+    "librime-predict-leveldb": {
+      "commit": "0c30981a7c178e62a94e02d611e866db66951bfe",
+      "patch": {
+        "name": "librime-predict.patch",
+        "sha256": "d9e81872509aa0282ee2a03fa68488d00d1ad1786dee163e3da38db378b1b712"
+      }
+    }
+  },
+  "abis": {
+    "armeabi-v7a": {
+      "archive_sha256": "c09a7a7538d6c0f50806993086d56df5db1d75a34eb19009e334baee8fd5c272",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 18283816,
+      "verified_elf_objects": 132,
+      "elf_class": 1,
+      "elf_machine": 40
+    },
+    "arm64-v8a": {
+      "archive_sha256": "732869ae7ff2a7350650ce5865c1b4cec5fd79542c83d6779b674dad4b493136",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 20752394,
+      "verified_elf_objects": 132,
+      "elf_class": 2,
+      "elf_machine": 183
+    },
+    "x86": {
+      "archive_sha256": "744af510dd0ed5b76c4823c9d96fae05544dedeaf858db12412ffbcc7ddfe24d",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 15539740,
+      "verified_elf_objects": 132,
+      "elf_class": 1,
+      "elf_machine": 3
+    },
+    "x86_64": {
+      "archive_sha256": "65fb89fd84177c4346d8a562f11edc9d90559d931f019bbd8e8d69c24dc72b61",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 19329884,
+      "verified_elf_objects": 132,
+      "elf_class": 2,
+      "elf_machine": 62
+    }
+  },
+  "upstream_prs": [
+    {
+      "number": 1203,
+      "url": "https://github.com/rime/librime/pull/1203",
+      "integration": "upstream-master",
+      "commit": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc"
+    },
+    {
+      "number": 1196,
+      "url": "https://github.com/rime/librime/pull/1196",
+      "integration": "squashed-source",
+      "commit": "a559ef5949481b5157b478401d78b70b3c17dab1"
+    },
+    {
+      "number": 1232,
+      "url": "https://github.com/rime/librime/pull/1232",
+      "integration": "equivalent-committed-source",
+      "commit": "8530499b19f2944776ba1d6988fc70712ddeacf2",
+      "identical_files": [
+        "src/rime/dict/rewrite_internal.h",
+        "src/rime/dict/rewrite_pack.cc",
+        "src/rime/dict/rewrite_pack.h",
+        "src/rime/dict/rewrite_store.cc",
+        "src/rime/dict/rewrite_store.h",
+        "src/rime/gear/gears_module.cc",
+        "src/rime/gear/rewriter.cc",
+        "src/rime/gear/rewriter.h",
+        "src/rime/lever/rewrite_compiler.cc",
+        "src/rime/lever/rewrite_compiler.h",
+        "src/rime/lever/rewrite_preset.cc",
+        "src/rime/lever/rewrite_preset.h"
+      ],
+      "adapted_files": [
+        "src/rime/lever/deployment_tasks.cc"
+      ]
+    }
+  ],
+  "source_ci_validation": {
+    "run_id": 41780384770,
+    "verified_work_branch_run": 41778608181,
+    "passed_checks": 14,
+    "infrastructure_pending": []
+  },
+  "learning_transaction_fix": {
+    "commit": "6af3692f650300ceccf99776c9f3dbc884692b9c",
+    "scope": "Coalesce automatic Memory learning by input context and active commit; immediate Backspace rolls back the whole latest round.",
+    "schema_or_lua_changes": false,
+    "manual_transaction_api_preserved": true,
+    "cache_disabled_accumulation_preserved": true
+  },
+  "validation": {
+    "android_abis": [
+      "armeabi-v7a",
+      "arm64-v8a",
+      "x86",
+      "x86_64"
+    ],
+    "source_contract_tests": 5,
+    "host_tests": 199,
+    "archive_checks": [
+      "SHA-256",
+      "ELF class and machine for every object",
+      "immutable source and plugin pins",
+      "unchanged dependency and public API hashes"
+    ]
+  },
+  "artifact_downloads": [
+    {
+      "name": "librime-arm64-v8a",
+      "id": 13299980465,
+      "sha256": "b59ce0a51c7b04c535ef762ef759b628a8311fa57d96a40adfeebe9b4fb2b270",
+      "verified": true
+    },
+    {
+      "name": "librime-x86",
+      "id": 13299940418,
+      "sha256": "01a881347aa7839b181c6ec8f6b98ad0611ba216bd005f48f4aed558af635af4",
+      "verified": true
+    },
+    {
+      "name": "librime-armeabi-v7a",
+      "id": 13299357413,
+      "sha256": "bf088656a79d556602e8abfab15917ee9d5263bdb601e48abc8ee052c5e17040",
+      "verified": true
+    },
+    {
+      "name": "librime-host-test-results",
+      "id": 13299328512,
+      "sha256": "90e035c8edf91393abddfe05d820e04973605a464c8ca61694df2d94f0bedcdc",
+      "verified": true
+    },
+    {
+      "name": "librime-x86_64",
+      "id": 13298434855,
+      "sha256": "b915d755568f8bc0ccc12278985010a21ee4782b719b0fb33813bce42d6fc3c3",
+      "verified": true
+    }
+  ]
+}
