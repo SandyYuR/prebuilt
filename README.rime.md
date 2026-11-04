@@ -1,9 +1,13 @@
 # 中州鹅 Rime 预编译产物
 
-核心定制源码在 [SandyYuR/librime 的 zhongzhou 分支](https://github.com/SandyYuR/librime/tree/zhongzhou)，prebuilder 固定源码与插件、执行四 ABI 编译和原生测试，本仓库保存验证后的产物，输入法固定引用本仓库提交。
+核心源码维护在 [SandyYuR/librime 的 zhongzhou 分支](https://github.com/SandyYuR/librime/tree/zhongzhou)。prebuilder 固定源码、插件与工具链，本仓库保存四 ABI 产物，输入法固定引用本仓库提交。
 
-本次源码仓库迁移记录见 [librime-source-maintenance-2026-10-21.json](librime-source-maintenance-2026-10-21.json)。四 ABI 的 librime.a 与前一固定产物逐字节相同；本轮只更新来源清单，不改变引擎功能或依赖。
+当前记录见 [librime-update-2026-11-04.json](librime-update-2026-11-04.json)。源码固定为 `69a934ac`：先变基到官方 `9777cb2f`，再重放 10 个仓库特有提交。官方已包含 #1196 和 #1203，重复的缓存与并行部署补丁不再保留下游实现；#1232、音节选择、忘词刷新、启动指纹及同次上屏事务撤销修复继续保留。
 
-每个 librime/<ABI>/share/rime/source-manifest.json 分别记录定制源码与官方基线，core_patch_mode=committed-source；integrated_patches 是迁入源码的历史，patches 为空。插件版本及其补丁、依赖和归档/头文件摘要均独立记录。
+本轮整理只改变来源说明与提交历史，源码、构建和测试文件与已通过 14 项完整 CI 的 `6af3692f` 逐字节一致。重新构建的四 ABI 归档与上一轮验证产物也完全一致；199 项原生测试、5 项源码契约检查通过。已逐项核验归档摘要、全部 ELF 对象架构及源码来源，插件、共享依赖和公共 C API 头文件保持原固定版本。
 
-根目录 toolchain-versions.json 继续描述未重建的共享依赖基线；本轮 librime 的来源以逐 ABI 清单为准。此仓库包含的其他历史组件不代表当前 APK 会链接它们。
+每个 `librime/<ABI>/share/rime/source-manifest.json` 记录实际构建源码、prebuilder、插件及补丁、依赖和归档/头文件摘要。`core_patch_mode=committed-source`；`integrated_patches` 仅保存初次迁移历史，已由官方覆盖的项目不再重放，`patches` 为空。独有基准工具仍保留，默认不执行性能基准测试。
+
+同库多个 Memory 在一次上屏时共享待提交事务，立即退格可撤销当轮学习，无需修改万象方案或 Lua 插件。初次源码迁移记录保留在 [librime-source-maintenance-2026-10-21.json](librime-source-maintenance-2026-10-21.json)，共享依赖基线仍由 `toolchain-versions.json` 描述。
+
+整理前的仓库历史保留在 `v0-archive-before-upstream-1196-20261104` 标签，已发布标签不移动。

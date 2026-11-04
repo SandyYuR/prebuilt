@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "version": "1.17.0-9777cb2",
+  "upstream": "9777cb2f25ff15116d6720141e7f0e539ac68063",
+  "previous_upstream": "0e8ee4047f938adc7f1e32e0dfa1f6ab11dac9db",
+  "librime_repository": "https://github.com/SandyYuR/librime.git",
+  "librime_commit": "69a934ac84902ce0bce911e3419a9113e9906b2d",
+  "source_tree": "7f23bd88d7f9195d26805725d78834d69070e7c1",
+  "downstream_manifest_sha256": "47e39a707ad94092bcf11f790f96864cf4c317004d5d532f3d9e3a8138e1eb65",
+  "previous_prebuilt": "e69b17da3dc317eaff2407efbf7943789b4a62a7",
+  "prebuilder_commit": "6ffb3f230260c53851d1e9ebc60d4edc7a2f868f",
+  "ci_run": 41805587949,
+  "dependency_prebuilt": "1126616c3ec569617da772e30d7a97f6b2694172",
+  "source_contract_tests": 5,
+  "host_tests": 199,
+  "plugins": {
+    "librime-lua": {
+      "commit": "68f9c364a2d25a04c7d4794981d7c796b05ab627",
+      "patch": {
+        "name": "librime-lua.patch",
+        "sha256": "393ac2fd11762a3bf8b3670273625f0ef8037f1869bf0b680874c3cb0ea615e2"
+      }
+    },
+    "librime-octagram": {
+      "commit": "dfcc15115788c828d9dd7b4bff68067d3ce2ffb8",
+      "patch": {
+        "name": "librime-octagram.patch",
+        "sha256": "a9482101331da85035e3dbd7347ced64b6e89e09b216ff45331d419b56aaa89c"
+      }
+    },
+    "librime-predict-leveldb": {
+      "commit": "0c30981a7c178e62a94e02d611e866db66951bfe",
+      "patch": {
+        "name": "librime-predict.patch",
+        "sha256": "d9e81872509aa0282ee2a03fa68488d00d1ad1786dee163e3da38db378b1b712"
+      }
+    }
+  },
+  "abis": {
+    "armeabi-v7a": {
+      "archive_sha256": "c09a7a7538d6c0f50806993086d56df5db1d75a34eb19009e334baee8fd5c272",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 18283816,
+      "verified_elf_objects": 132,
+      "elf_class": 1,
+      "elf_machine": 40
+    },
+    "arm64-v8a": {
+      "archive_sha256": "732869ae7ff2a7350650ce5865c1b4cec5fd79542c83d6779b674dad4b493136",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 20752394,
+      "verified_elf_objects": 132,
+      "elf_class": 2,
+      "elf_machine": 183
+    },
+    "x86": {
+      "archive_sha256": "744af510dd0ed5b76c4823c9d96fae05544dedeaf858db12412ffbcc7ddfe24d",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 15539740,
+      "verified_elf_objects": 132,
+      "elf_class": 1,
+      "elf_machine": 3
+    },
+    "x86_64": {
+      "archive_sha256": "65fb89fd84177c4346d8a562f11edc9d90559d931f019bbd8e8d69c24dc72b61",
+      "rime_api_sha256": "4e416573f8b8b1d23f2a5cab748e8ff70e114f141f608471924063e22010fa4b",
+      "archive_bytes": 19329884,
+      "verified_elf_objects": 132,
+      "elf_class": 2,
+      "elf_machine": 62
+    }
+  },
+  "upstream_prs": [
+    {
+      "number": 1203,
+      "url": "https://github.com/rime/librime/pull/1203",
+      "integration": "upstream-master",
+      "commit": "e930f57b5cc2eeac91aed3b6c7fe62e96f1fc8bc"
+    },
+    {
+      "number": 1196,
+      "url": "https://github.com/rime/librime/pull/1196",
+      "integration": "upstream-master",
+      "commit": "9777cb2f25ff15116d6720141e7f0e539ac68063",
+      "merged_pr_head": "29b47d8866d68776c6dff02ceb30c9e065b446f3"
+    },
+    {
+      "number": 1232,
+      "url": "https://github.com/rime/librime/pull/1232",
+      "integration": "equivalent-committed-source",
+      "commit": "8530499b19f2944776ba1d6988fc70712ddeacf2",
+      "identical_files": [
+        "src/rime/dict/rewrite_internal.h",
+        "src/rime/dict/rewrite_pack.cc",
+        "src/rime/dict/rewrite_pack.h",
+        "src/rime/dict/rewrite_store.cc",
+        "src/rime/dict/rewrite_store.h",
+        "src/rime/gear/gears_module.cc",
+        "src/rime/gear/rewriter.cc",
+        "src/rime/gear/rewriter.h",
+        "src/rime/lever/rewrite_compiler.cc",
+        "src/rime/lever/rewrite_compiler.h",
+        "src/rime/lever/rewrite_preset.cc",
+        "src/rime/lever/rewrite_preset.h"
+      ],
+      "adapted_files": [
+        "src/rime/lever/deployment_tasks.cc"
+      ]
+    }
+  ],
+  "maintenance": {
+    "history_strategy": "rebase-onto-upstream",
+    "upstream_pr_integration": "one-commit-per-pr",
+    "superseded_patches": [
+      {
+        "commit": "5bdfe1584a760b230bffd0b5206a329e3c046df0",
+        "upstream_pr": 1203,
+        "reason": "Replaced by the official compile graph and bounded scheduler in the upstream base."
+      },
+      {
+        "commit": "d4ae2ae1694d9026da682e84c8398b69c50afae4",
+        "rebased_commit": "1278e010785ddcc32f42c37c8f9ead0091c5dd4b",
+        "upstream_pr": 1196,
+        "upstream_commit": "9777cb2f25ff15116d6720141e7f0e539ac68063",
+        "reason": "The cache implementation and regression cases are now included in the official upstream base. Only unique benchmark tooling is retained downstream."
+      }
+    ]
+  },
+  "source_validation": {
+    "verified_equivalent_commit": "6af3692f650300ceccf99776c9f3dbc884692b9c",
+    "verified_ci_run": 41780384770,
+    "passed_checks": 14,
+    "equivalence_changed_files": [
+      "downstream/README.zh-CN.md",
+      "downstream/manifest.json"
+    ],
+    "all_source_build_and_test_files_identical": true,
+    "unique_downstream_commits": 10
+  },
+  "archive_equivalence": {
+    "previous_prebuilt": "e69b17da3dc317eaff2407efbf7943789b4a62a7",
+    "all_four_rebuilt_archives_byte_identical": true
+  },
+  "learning_transaction_fix": {
+    "retained": true,
+    "schema_or_lua_changes_required": false,
+    "manual_transaction_api_preserved": true
+  },
+  "artifact_downloads": [
+    {
+      "name": "librime-host-test-results",
+      "id": 13310675031,
+      "sha256": "d2e330108fe0a02f2d66701ea7a38cb81e2e35d886dcd9403e1dbc574b5fba24",
+      "bytes": 6511
+    },
+    {
+      "name": "librime-armeabi-v7a",
+      "id": 13310505104,
+      "sha256": "ed3347b92c38a8267fcdfdc653fe762114d33294839ab527552a203bd828a52b",
+      "bytes": 4249590
+    },
+    {
+      "name": "librime-x86_64",
+      "id": 13310235670,
+      "sha256": "8842a4c9ebcba30a24e35f604c41e9d3d65925ce5e8a636d8c6434a255cec6cf",
+      "bytes": 3963170
+    },
+    {
+      "name": "librime-x86",
+      "id": 13309980852,
+      "sha256": "959968403e8989e8ebacce0066091a845d898a7c1cd6b9ed31c3f6310f174b48",
+      "bytes": 3838530
+    },
+    {
+      "name": "librime-arm64-v8a",
+      "id": 13308454556,
+      "sha256": "5b06ae91210179bfdfbd04004a586f4d5197df04d1e54d51e09cbdfbebbcc5af",
+      "bytes": 4293616
+    }
+  ]
+}
